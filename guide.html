@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Page</title>
+    <meta name="description" content="This is my page description">
+    <style>
+      body {
+        background-color: #222;
+        font-family: Arial, sans-serif;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+      }
+
+      h1 {
+        font-size: 3em;
+        margin: 0.5em 0;
+      }
+
+      p {
+        font-size: 1.2em;
+        line-height: 1.5;
+        margin: 1em 0;
+      }
+
+      .box {
+  padding: 2em;
+  background-color: #444;
+  border-radius: 0.5em; /* Round the top corners */
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+  width: 80%;
+  margin: 0 auto; /* Center the box */
+}
+
+      /* Animate the background color */
+      @keyframes rainbow {
+        0% {
+          background-color: #f00;
+        }
+        20% {
+          background-color: #ff0;
+        }
+        40% {
+          background-color: #0f0;
+        }
+        60% {
+          background-color: #0ff;
+        }
+        80% {
+          background-color: #00f;
+        }
+        100% {
+          background-color: #f00;
+        }
+      }
+
+      /* Apply the animation to the body */
+      body {
+        animation: rainbow 5s ease infinite;
+      }
+
+      /* Style for the image */
+      .image {
+        float: right;
+        margin-left: 20px;
+        width: calc(100% + 30px);
+        height: 10vh;
+      }
+      
+      /* Style for the lightning placeholder */
+      .placeholder {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 2em;
+        animation: lightning 1s linear infinite;
+      }
+      
+      /* Animation for the lightning placeholder */
+      @keyframes lightning {
+        0% {
+          color: blue;
+          text-shadow: 0 0 10px blue;
+        }
+        33% {
+          color: purple;
+          text-shadow: 0 0 10px purple;
+        }
+        66% {
+          color: black;
+          text-shadow: 0 0 10px black;
+        }
+        100% {
+          color: blue;
+          text-shadow: 0 0 10px blue;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h1>Guide a come usare il bot</h1>
+      <p>Metti il <strong>token</strong> nel file <strong>config.json</strong>,<br> metti il <strong>prefisso del bot</strong>sempre nel file config.json, <br> e metti gli <strong>status</strong> che vuoi che il bot abbia sempre nel file config.json, esempio:</p>
+      <img src="screen.png" alt="Image" class="image">
+    </div>
+    <div class="placeholder">Si, amo far ammalare gli occhi delle persone + shitty html and css speedrun</div>
+  </body>
+</html>

@@ -1,0 +1,8 @@
+{
+    "token":"token here",
+    "prefix":"o!",
+    "statuses":["status 1", "status 2"],
+    "tasks_loop":1.0,
+    "_comment":"tasks loop must be int or float"
+    
+}
